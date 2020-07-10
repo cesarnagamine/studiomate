@@ -27,7 +27,6 @@
     "nodemailer": "^6.4.10",
     "nodemailer-smtp-transport": "^2.7.4",
     "nodemon": "^2.0.4",
-    "path": "^0.12.7",
     "plotly.js": "^1.54.5",
     "react": "^16.13.1",
     "react-confetti": "^5.1.0",
@@ -46,7 +45,7 @@
   "scripts": {
     "start": "npm run dev",
     "server": "nodemon server.js",
-    "client": "cd client && react-scripts start",
+    "client": "react-scripts start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
