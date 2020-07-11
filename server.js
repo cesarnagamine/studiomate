@@ -25,7 +25,7 @@ app.get('*', (req, res) => {
 //Routes:
 //Importa archivo 'posts' desde el folder 'routes'
 //Usa las rutas del archivo 'posts' para el endpoint '/posts'
-const postRoute = require('./routes/posts');
+
 
 app.use('/posts', postRoute);
 //Post request to send emails authomatically using nodemailer

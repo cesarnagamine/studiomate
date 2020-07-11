@@ -15,9 +15,7 @@ export class Download extends Component {
         return (
             <div id="main">
                 <Header />
-                <Link to='/'>
-                    <button >Inicio</button>
-                </Link>
+
                 <br />
 
                 <section id="one">
@@ -26,7 +24,9 @@ export class Download extends Component {
 					Para mayores detalles sobre el uso del producto revise la documentación.</h2>
                     </header>
                     <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia
-                    ac in adipiscing in curae lobortis tortor primis.</p>
+                    ac in adipiscing in curae lobortis tortor primis.</p>  <Link to='/'>
+                        <button >Inicio</button>
+                    </Link>
                     <div className="container align-center">
                         <button>
                             <a href='/ReiwaCo.Software.exe' download="">Descargar</a>
