@@ -14,14 +14,11 @@ const port = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
+const publicPath = path.join(__dirname, 'client/public');
+app.use(express.static(publicPath));
 
-
-app.use(express.static(path.join(__dirname, 'build')));
-
-
-
-app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(publicPath, 'build', 'index.html'));
 });
 
 
