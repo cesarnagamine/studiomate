@@ -71,15 +71,7 @@ mongoose.connect(process.env.DB_CONNECTION, {
     console.error('Error!', err)
 });
 
-//ADDED FOR DEPLOYMENT:
-if (process.env.NODE_ENV === 'production') {
 
-    app.use(express.static('client/build'));
-//Do not forget the req, res arguments!
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-    });
-}
 
 app.listen(port);
 console.log('3001');
