@@ -11,23 +11,21 @@ const path = require('path');
 
 const port = process.env.PORT || 3001;
 
-app.use(cors());
+
+//Middlewares:
+//Ejecuta este código automáticamente con la aplicación.
 app.use(express.json());
-
-const publicPath = path.join(__dirname, 'client/public');
-app.use(express.static(publicPath));
-
-app.get('*', (req, res) => {
-    res.sendFile(path.join(publicPath, 'build', 'index.html'));
-});
-
+app.use(cors());
+app.use('/public', express.static(__dirname + '/public'));
 
 //Routes:
 //Importa archivo 'posts' desde el folder 'routes'
 //Usa las rutas del archivo 'posts' para el endpoint '/posts'
-
-
 app.use('/posts', postRoute);
+
+
+
+
 //Post request to send emails authomatically using nodemailer
 //Triggerd from the 'Form' component handleSubmit() function:
 app.post('/api/form', (req, res) => {

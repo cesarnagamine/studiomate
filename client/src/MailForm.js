@@ -30,14 +30,14 @@ class MailForm extends React.Component {
         };
 
         // AXIOS post to use the post request from nodemailer at 'server.js' file:
-        axios.post('http://localhost:3001/api/form', { user })
+        axios.post('https://localhost:3001/api/form', { user })
             .then(res => {
                 console.log(res);
                 console.log(res.data);
             })
 
         // AXIOS post to use the post request from routes on 'routes/posts.js' file:
-        axios.post('http://localhost:3001/posts', { user })
+        axios.post('https://localhost:3001/posts', { user })
             .then(res => {
                 console.log(res);
                 console.log(res.data);
@@ -68,14 +68,14 @@ class MailForm extends React.Component {
 
                     <form method="post" action="send" onSubmit={this.handleSubmit}>
                         <div className="row">
-                            <div className="col-6 col-12-small">
+                            <div className="col-12">
                                 <input type="text"
                                     name="name"
                                     id="name"
                                     placeholder="Nombre"
                                     onChange={this.handleChange} />
                             </div>
-                            <div className="col-6 col-12-small">
+                            <div className="col-12">
                                 <input type="text"
                                     name="email"
                                     id="email"

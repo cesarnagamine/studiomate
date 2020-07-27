@@ -2,7 +2,7 @@
   "name": "project",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001",
+  "proxy": "https://localhost:3001",
   "main": "server.js", 
   "engines": {
     "node": "13.5.0"
@@ -48,12 +48,13 @@
     "typescript": "^3.9.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "client": "npm start --prefix client",
+    "start": "npm run dev",
     "server": "nodemon server.js",
-    "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
-    "build": "cd client/ && npm install && npm run build"
+    "client": "cd client && react-scripts start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
  
   "eslintConfig": {
