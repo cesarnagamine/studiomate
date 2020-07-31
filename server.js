@@ -11,6 +11,7 @@ const path = require('path');
 
 const port = process.env.PORT || 3001;
 
+<<<<<<< HEAD
 app.use(cors());
 app.use(express.json());
 
@@ -20,14 +21,23 @@ app.use(express.static(publicPath));
 app.get('*', (req, res) => {
     res.sendFile(path.join(publicPath, 'index.html'));
 });
+=======
+>>>>>>> 27045d6814d77c7e8e1d38b240931d457d9b5ee1
 
+//Middlewares:
+//Ejecuta este código automáticamente con la aplicación.
+app.use(express.json());
+app.use(cors());
+app.use('/public', express.static(__dirname + '/public'));
 
 //Routes:
 //Importa archivo 'posts' desde el folder 'routes'
 //Usa las rutas del archivo 'posts' para el endpoint '/posts'
-
-
 app.use('/posts', postRoute);
+
+
+
+
 //Post request to send emails authomatically using nodemailer
 //Triggerd from the 'Form' component handleSubmit() function:
 app.post('/api/form', (req, res) => {
@@ -75,8 +85,8 @@ mongoose.connect(process.env.DB_CONNECTION, {
 if (process.env.NODE_ENV === 'production') {
 
     app.use(express.static('client/build'));
-
-    app.get('*', () => {
+//Do not forget the req, res arguments!
+    app.get('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
 }

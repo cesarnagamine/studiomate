@@ -1,11 +1,9 @@
 import React from "react";
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
     Link
 } from "react-router-dom";
-import Download from './Download';
+
 import Header from './Header';
 import StripeButton from './StripeButton';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -22,7 +20,7 @@ class Landing extends React.Component {
                 <div id="main">
 
                     <section id="one">
-                        <header className="major">
+                        <header className="major" className='container align-center'>
                             <h2>Reiwa Company</h2>
                         </header>
 
@@ -31,14 +29,14 @@ class Landing extends React.Component {
                         commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi
 				lorem vulputate lorem neque cubilia.</p>
 
-                        <ul className="actions">
-                            <li> <Link to='/about'>
+                        <ul className="actions" className='container align-center'>
+                            <Link to='/about'>
                                 <button type='submit'>Nosotros</button>
-                            </Link></li>
+                            </Link>
                         </ul>
 
                     </section>
-                    <section id="two">
+                    <section id="two" className='container align-center'>
                         <h2>Reiwa Total Software Solution, <br />
 					convierte el análisis de datos en algo simple.</h2>
                         <article className="work-item">

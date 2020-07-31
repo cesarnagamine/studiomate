@@ -1,14 +1,12 @@
 import React from "react";
 import {
     BrowserRouter as Router,
-    Switch,
     Route,
-    Link
 } from "react-router-dom";
 import Download from './Download';
 import About from './About';
 import Landing from './Landing';
-import StripeButton from './StripeButton';
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
