@@ -48,19 +48,12 @@
     "typescript": "^3.9.5"
   },
   "scripts": {
-    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "client": "npm start --prefix client",
     "server": "nodemon server.js",
-    "client": "cd client && react-scripts start",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-<<<<<<< HEAD
-  },
-  "engines": {
-    "node": "13.5.0"
-=======
->>>>>>> 27045d6814d77c7e8e1d38b240931d457d9b5ee1
+    "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "cd client/ && npm install && npm run build"
   },
  
   "eslintConfig": {

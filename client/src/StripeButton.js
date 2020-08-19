@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ReactDOM from 'react-dom';
 import { loadStripe } from '@stripe/stripe-js';
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
@@ -8,9 +8,10 @@ const stripePromise = loadStripe('pk_test_51GrgdmDgIag4HrU9DOZYJjufVaRk5E2WvO2aZ
 function StripeButton() {
 
     const handleClick = async (event) => {
-
         // When the customer clicks on the button, redirect them to Checkout.
         const stripe = await stripePromise;
+
+        console.log(stripe);
 
         const { error } = await stripe.redirectToCheckout({
             lineItems: [
@@ -28,6 +29,7 @@ function StripeButton() {
             return alert(error.message);
         }
     };
+
 
     return (
         <button role="link" onClick={handleClick}>
