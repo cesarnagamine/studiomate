@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 require('dotenv/config');
-const postRoute = require('./routes/posts');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const smtpTransport = require('nodemailer-smtp-transport');
@@ -20,6 +19,7 @@ app.use('/public', express.static(__dirname + '/public'));
 //Routes:
 //Importa archivo 'posts' desde el folder 'routes'
 //Usa las rutas del archivo 'posts' para el endpoint '/posts'
+const postRoute = require('./routes/posts');
 app.use('/posts', postRoute);
 
 
