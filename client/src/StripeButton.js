@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { loadStripe } from '@stripe/stripe-js';
+import "bootstrap/dist/css/bootstrap.min.css";
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
 const stripePromise = loadStripe('pk_test_51GrgdmDgIag4HrU9DOZYJjufVaRk5E2WvO2aZb6TQaTQbhmAqnVV0qTpQXTNqUm2ZIrev4hIurkVbaNasIpCedqp00FnOkb04n');
@@ -32,7 +33,7 @@ function StripeButton() {
 
 
     return (
-        <button role="link" onClick={handleClick}>
+        <button role="link" className='btn btn-primary' onClick={handleClick}>
             Comprar
         </button>
     );

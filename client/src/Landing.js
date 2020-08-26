@@ -31,7 +31,7 @@ class Landing extends React.Component {
 
                         <ul className="actions" className='container align-center'>
                             <Link to='/about'>
-                                <button type='submit'>Nosotros</button>
+                                <button type='submit' className='btn btn-primary'>Nosotros</button>
                             </Link>
                         </ul>
 

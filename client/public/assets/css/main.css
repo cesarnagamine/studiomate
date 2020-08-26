@@ -2724,7 +2724,7 @@ input[type='button']:disabled,
 
 #header strong,
 #header b {
-  color: #ffffff;
+  color: #1057b4;
 }
 
 #header h2,
@@ -2736,7 +2736,7 @@ input[type='button']:disabled,
 }
 
 #header h1 {
-  color: rgba(0, 0, 0, 0.979);
+  color: rgba(0, 162, 255, 0.979);
   font-size: 1.35em;
   line-height: 1.75em;
   margin: 0;
@@ -3116,6 +3116,10 @@ body.is-touch .poptrox-popup .closer {
 
   #header > .inner {
     margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 0.5em;
+    text-align: center;
+    padding: 1em 1em 1em 1em;
   }
 
   /* Footer */

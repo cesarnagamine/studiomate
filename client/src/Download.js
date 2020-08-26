@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import {
     BrowserRouter as Router,
     Link
@@ -23,10 +24,10 @@ export class Download extends Component {
                     </header>
                     <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia
                     ac in adipiscing in curae lobortis tortor primis.</p>  <Link to='/'>
-                        <button >Inicio</button>
+                        <button className='btn btn-primary'>Inicio</button>
                     </Link>
                     <div className="container align-center">
-                        <button>
+                        <button className='btn btn-outline-primary'>
                             <a href='/ReiwaCo.Software.exe' download="">Descargar</a>
                         </button>
 
