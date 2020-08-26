@@ -2736,7 +2736,7 @@ input[type='button']:disabled,
 }
 
 #header h1 {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.979);
   font-size: 1.35em;
   line-height: 1.75em;
   margin: 0;
@@ -3097,11 +3097,12 @@ body.is-touch .poptrox-popup .closer {
 
 /* Large */
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1680px) {
   /* Header */
 
   #header {
-    padding: 6em 3em 3em 3em;
+    background-image: url('../../images/loginbg.jpg');
+    padding: 3em 3em 3em 3em;
     width: 30%;
   }
 
@@ -3160,9 +3161,10 @@ body.is-touch .poptrox-popup .closer {
   /* Header */
 
   #header {
+    background-image: url('../../images/loginbg.jpg');
     background-attachment: scroll;
     background-position: top left, center center;
-    background-size: auto, cover;
+    background-size: cover;
     left: auto;
     padding: 6em 4em;
     position: relative;
@@ -3263,7 +3265,10 @@ body.is-touch .poptrox-popup .closer {
   /* Header */
 
   #header {
-    padding: 2.25em 1.5em;
+    background-image: url('../../images/loginbg.jpg');
+    padding: 3em 3em 3em 3em;
+    width: 100%;
+    
   }
 
   #header h1 {
@@ -3305,6 +3310,7 @@ body.is-touch .poptrox-popup .closer {
   /* Header */
 
   #header {
+    background-image: url('../../images/loginbg.jpg');
     padding: 4.5em 1.5em;
   }
 
