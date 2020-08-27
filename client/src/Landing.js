@@ -16,7 +16,7 @@ class Landing extends React.Component {
 
 			
 					<header id="header" className="alt">
-						<a href="index.html" className="logo"><strong>StudioMate Co.</strong> <span>by César Nagamine</span></a>
+						<a className="logo"><strong>StudioMate Co.</strong> <span>by César Nagamine</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -26,7 +26,7 @@ class Landing extends React.Component {
 
 				
 					<nav id="menu">
-						<ul className="links">
+						{/* <ul className="links">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="landing.html">Landing</a></li>
 							<li><a href="generic.html">Generic</a></li>
@@ -35,7 +35,7 @@ class Landing extends React.Component {
 						<ul className="actions stacked">
 							<li><a href="#" className="button primary fit">Get Started</a></li>
 							<li><a href="#" className="button fit">Log In</a></li>
-						</ul>
+						</ul> */}
 					</nav>
 
 			
@@ -181,7 +181,7 @@ class Landing extends React.Component {
 								<li><a href="#" className="icon brands alt fa-linkedin-in"><span className="label">LinkedIn</span></a></li>
 							</ul>
 							<ul className="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								<li>&copy; César Nagamine T.</li>
 							</ul>
 						</div>
 					</footer>

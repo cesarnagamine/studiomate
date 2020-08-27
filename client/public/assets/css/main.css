@@ -177,6 +177,8 @@ input, select, textarea {
 	}
 
 	p {
+		padding: 2em;
+		color: white;
 		margin: 0 0 2em 0;
 	}
 
@@ -3474,6 +3476,7 @@ input, select, textarea {
 				}
 
 				#banner > .inner .content p {
+					color:white;
 					font-size: 0.7em;
 					font-weight: 600;
 					letter-spacing: 0.25em;
