@@ -2194,7 +2194,7 @@ input[type='radio'] + label:before {
 
 .image img {
   border-radius: 0.35em;
-  display: block;
+  display: inherit;
 }
 
 .image.left {
@@ -2238,8 +2238,9 @@ input[type='radio'] + label:before {
 }
 
 .image.avatar img {
+  padding: 0em 0em 2em 0em;
   border-radius: 100%;
-  width: 100%;
+  width: 30%;
 }
 
 /* List */
