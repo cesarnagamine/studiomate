@@ -3,12 +3,12 @@ import {
     BrowserRouter as Router,
     Link
 } from "react-router-dom";
-import Header from './Header';
+
 
 function About() {
     return (
         <div id="main">
-            <Header />
+          
             <section id="one">
 
                 <header className="major">

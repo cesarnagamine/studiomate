@@ -33,7 +33,7 @@ function StripeButton() {
 
 
     return (
-        <button role="link" className='button' onClick={handleClick}>
+        <button role="link" className='button next' onClick={handleClick}>
             Comprar
         </button>
     );

@@ -1,129 +1,192 @@
 import React from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
-import Header from "./Header";
 import StripeButton from "./StripeButton";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MailForm from "./MailForm";
 
 class Landing extends React.Component {
+
+
+
   render() {
     return (
-      <div>
-        <Header />
-        <div id="main">
-          <section id="one">
-            <header className="major" className="container align-center">
-              <div className="inner">
-                <a href="#" className="image avatar">
-                  <img src="images/reiwa-kanji.png" alt="" />
-                </a>
-              </div>
+      
+      <div id="wrapper">
 
-              <h1>Meiji Studio</h1>
-            </header>
-          </section>
-          <section id="two" className="container align-center">
-            <h2>Convierte el análisis de datos en algo simple.</h2>
-            <article className="work-item">
-              <a>
-                Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc
-                nisi lorem vulputate lorem neque cubilia ac in adipiscing in
-                curae lobortis tortor primis integer massa adipiscing id nisi
-                accumsan pellentesque commodo blandit enim arcu non at amet id
-                arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi
-                lorem vulputate lorem neque cubilia.
-              </a>
-              <br />
+			
+					<header id="header" className="alt">
+						<a href="index.html" className="logo"><strong>StudioMate Co.</strong> <span>by César Nagamine</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+           
+              
 
-            
+				
+					<nav id="menu">
+						<ul className="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Landing</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul className="actions stacked">
+							<li><a href="#" className="button primary fit">Get Started</a></li>
+							<li><a href="#" className="button fit">Log In</a></li>
+						</ul>
+					</nav>
 
-            </article>
-            <div className="container align-center">
-                <Link to="/about">
-                  <button type="submit" className="button">
+			
+					<section id="banner" className="major">
+						<div className="inner">
+							<header className="major">
+								<h1>Hola, somos StudioMate Co.</h1>
+							</header>
+							<div className="content">
+								<p>A responsive site template designed by HTML5 UP<br />
+								and released under the Creative Commons.</p>
+								<ul className="actions">
+								
+                  <Link to="/about">
+                  <button type="submit" className="button next scrolly">
                     Nosotros
                   </button>
                 </Link>
-              </div>
-          </section>
-          <section id="two">
-            <h2>Recent Work</h2>
-            <div className="row">
-              <article className="col-6 col-12-xsmall work-item">
-                <a href="images/fulls/01.jpg" className="image fit thumb">
-                  <img src="images/thumbs/01.jpg" alt="" />
-                </a>
-                <h3>Magna sed consequat tempus</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <article className="col-6 col-12-xsmall work-item">
-                <a href="images/fulls/02.jpg" className="image fit thumb">
-                  <img src="images/thumbs/02.jpg" alt="" />
-                </a>
-                <h3>Ultricies lacinia interdum</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <article className="col-6 col-12-xsmall work-item">
-                <a href="images/fulls/03.jpg" className="image fit thumb">
-                  <img src="images/thumbs/03.jpg" alt="" />
-                </a>
-                <h3>Tortor metus commodo</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <article className="col-6 col-12-xsmall work-item">
-                <a href="images/fulls/04.jpg" className="image fit thumb">
-                  <img src="images/thumbs/04.jpg" alt="" />
-                </a>
-                <h3>Quam neque phasellus</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <div className="container align-center">
-                <br /> <h2>Interesado en obtener nuestro producto?</h2>
-                <br />
-                <StripeButton />
-              </div>
-            </div>
-          </section>
+                  
+								</ul>
+							</div>
+						</div>
+					</section>
 
-          <section id="three">
-            <h2>Contáctate con nosotros</h2>
-            <p>
-              Accumsan pellentesque commodo blandit enim arcu non at amet id
-              arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi
-              lorem vulputate lorem neque lorem ipsum dolor.
-            </p>
-            <div className="row">
-              <div className="col-8 col-12-small">
-                <MailForm />
-              </div>
-              <div className="col-4 col-12-small">
-                <h3 className="icon solid fa-home">
-                  <span className="label">Address</span>
-                </h3>
-                1234 Av.Nose Donde.
-                <br />
-                Lima,
-                <br /> San Miguel
-                <br />
-                Perú
-                <h3 className="icon solid fa-mobile-alt">
-                  <span className="label">Phone</span>
-                </h3>
-                987-654-321
-              </div>
-            </div>
-          </section>
-        </div>
+				
+					<div id="main">
 
-        <footer id="footer">
-          <div className="inner">
-            <ul className="copyright">
-              <li>&copy; Meiji Studio Co.</li>
-            </ul>
-          </div>
-        </footer>
-      </div>
+					
+							<section id="one" className="tiles">
+								<article>
+									<span className="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<header className="major">
+										<h3><a href="landing.html" className="link">Aliquam</a></h3>
+										<p>Ipsum dolor sit amet</p>
+									</header>
+								</article>
+								<article>
+									<span className="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+									<header className="major">
+										<h3><a href="landing.html" className="link">Tempus</a></h3>
+										<p>feugiat amet tempus</p>
+									</header>
+								</article>
+								<article>
+									<span className="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<header className="major">
+										<h3><a href="landing.html" className="link">Magna</a></h3>
+										<p>Lorem etiam nullam</p>
+									</header>
+								</article>
+								<article>
+									<span className="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<header className="major">
+										<h3><a href="landing.html" className="link">Ipsum</a></h3>
+										<p>Nisl sed aliquam</p>
+									</header>
+								</article>
+								<article>
+									<span className="image">
+										<img src="images/pic05.jpg" alt="" />
+									</span>
+									<header className="major">
+										<h3><a href="landing.html" className="link">Consequat</a></h3>
+										<p>Ipsum dolor sit amet</p>
+									</header>
+								</article>
+								<article>
+									<span className="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<header className="major">
+										<h3><a href="landing.html" className="link">Etiam</a></h3>
+										<p>Feugiat amet tempus</p>
+									</header>
+								</article>
+							</section>
+
+					
+							<section id="two">
+								<div className="inner">
+									<header className="major">
+										<h2>Massa libero</h2>
+									</header>
+									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+									<ul className="actions">
+										<li> <StripeButton /></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+
+			
+					<section id="contact">
+						<div className="inner">
+							<section>
+              <MailForm />
+							</section>
+							<section className="split">
+								<section>
+									<div className="contact-method">
+										<span className="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">information@untitled.tld</a>
+									</div>
+								</section>
+								<section>
+									<div className="contact-method">
+										<span className="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(000) 000-0000 x12387</span>
+									</div>
+								</section>
+								<section>
+									<div className="contact-method">
+										<span className="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>1234 Somewhere Road #5432<br />
+										Nashville, TN 00000<br />
+										United States of America</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				
+					<footer id="footer">
+						<div className="inner">
+							<ul className="icons">
+								<li><a href="#" className="icon brands alt fa-twitter"><span className="label">Twitter</span></a></li>
+								<li><a href="#" className="icon brands alt fa-facebook-f"><span className="label">Facebook</span></a></li>
+								<li><a href="#" className="icon brands alt fa-instagram"><span className="label">Instagram</span></a></li>
+								<li><a href="#" className="icon brands alt fa-github"><span className="label">GitHub</span></a></li>
+								<li><a href="#" className="icon brands alt fa-linkedin-in"><span className="label">LinkedIn</span></a></li>
+							</ul>
+							<ul className="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
     );
   }
 }

@@ -4,7 +4,7 @@ import {
     BrowserRouter as Router,
     Link
 } from "react-router-dom";
-import Header from './Header';
+
 
 
 export class Download extends Component {
@@ -13,7 +13,7 @@ export class Download extends Component {
     render() {
         return (
             <div id="main">
-                <Header />
+              
 
                 <br />
 
