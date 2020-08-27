@@ -21,7 +21,7 @@ function About() {
                 <ul className="actions">
                     <li>
                         <Link to='/'>
-                            <button>Inicio</button>
+                            <button className='btn btn-success'>Inicio</button>
                         </Link>
                     </li>
 

@@ -21,7 +21,7 @@ class Landing extends React.Component {
 
                     <section id="one">
                         <header className="major" className='container align-center'>
-                            <h2>Reiwa Company</h2>
+                            <h2>Meiji Studio Co.</h2>
                         </header>
 
                         <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia
@@ -31,13 +31,13 @@ class Landing extends React.Component {
 
                         <ul className="actions" className='container align-center'>
                             <Link to='/about'>
-                                <button type='submit' className='btn btn-primary'>Nosotros</button>
+                                <button type='submit' className='btn btn-success'>Nosotros</button>
                             </Link>
                         </ul>
 
                     </section>
                     <section id="two" className='container align-center'>
-                        <h2>Reiwa Total Software Solution, <br />
+                        <h2>Meiji Studio Co. <br />
 					convierte el análisis de datos en algo simple.</h2>
                         <article className="work-item">
                             <a>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia
@@ -45,16 +45,44 @@ class Landing extends React.Component {
                             commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi
 				lorem vulputate lorem neque cubilia.</a>
 
+                            
+
+
+                        </article>
+                    </section>
+                    <section id="two">
+						<h2>Recent Work</h2>
+						<div className="row">
+							<article className="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Magna sed consequat tempus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article className="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/02.jpg" className="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<h3>Ultricies lacinia interdum</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article className="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/03.jpg" className="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<h3>Tortor metus commodo</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article className="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/04.jpg" className="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<h3>Quam neque phasellus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
                             <div className='container align-center' >
                                 <br /> <h2>Interesado en obtener nuestro producto?</h2>
                                 <br />
                                 <StripeButton />
 
                             </div>
-
-
-                        </article>
-                    </section>
+							
+						</div>
+						
+					</section>
 
                     <section id="three">
                         <h2>Contáctate con nosotros</h2>
@@ -85,7 +113,7 @@ class Landing extends React.Component {
                     <div className="inner">
 
                         <ul className="copyright">
-                            <li>&copy; ReiwaCo.</li>
+                            <li>&copy; Meiji Studio Co.</li>
                         </ul>
                     </div>
                 </footer>
