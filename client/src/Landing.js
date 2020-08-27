@@ -18,7 +18,7 @@ class Landing extends React.Component {
 					<header id="header" className="alt">
 						<a className="logo"><strong>StudioMate Co.</strong> <span>by César Nagamine</span></a>
 						<nav>
-							<a href="#menu">Menu</a>
+							<a className="logo">Menu</a>
 						</nav>
 					</header>
            
@@ -168,11 +168,7 @@ class Landing extends React.Component {
 								</section>
 							</section>
 						</div>
-					</section>
-
-				
-					<footer id="footer">
-						<div className="inner">
+            <div className="inner">
 							<ul className="icons">
 								<li><a href="#" className="icon brands alt fa-twitter"><span className="label">Twitter</span></a></li>
 								<li><a href="#" className="icon brands alt fa-facebook-f"><span className="label">Facebook</span></a></li>
@@ -180,10 +176,12 @@ class Landing extends React.Component {
 								<li><a href="#" className="icon brands alt fa-github"><span className="label">GitHub</span></a></li>
 								<li><a href="#" className="icon brands alt fa-linkedin-in"><span className="label">LinkedIn</span></a></li>
 							</ul>
-							<ul className="copyright">
-								<li>&copy; César Nagamine T.</li>
-							</ul>
 						</div>
+					</section>
+
+				
+					<footer id="footer">
+				
 					</footer>
 
 			</div>
