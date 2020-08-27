@@ -72,6 +72,9 @@ class Landing extends React.Component {
 									<header className="major">
 										<h3><a href="landing.html" className="link">Aliquam</a></h3>
 										<p>Ipsum dolor sit amet</p>
+                    <button type="submit" className="button next scrolly">
+                    Ver demo
+                  </button>
 									</header>
 								</article>
 								<article>
@@ -81,6 +84,9 @@ class Landing extends React.Component {
 									<header className="major">
 										<h3><a href="landing.html" className="link">Tempus</a></h3>
 										<p>feugiat amet tempus</p>
+                    <button type="submit" className="button next scrolly">
+                    Ver demo
+                  </button>
 									</header>
 								</article>
 								<article>
@@ -90,6 +96,9 @@ class Landing extends React.Component {
 									<header className="major">
 										<h3><a href="landing.html" className="link">Magna</a></h3>
 										<p>Lorem etiam nullam</p>
+                    <button type="submit" className="button next scrolly">
+                    Ver demo
+                  </button>
 									</header>
 								</article>
 								<article>
@@ -99,6 +108,9 @@ class Landing extends React.Component {
 									<header className="major">
 										<h3><a href="landing.html" className="link">Ipsum</a></h3>
 										<p>Nisl sed aliquam</p>
+                    <button type="submit" className="button next scrolly">
+                    Ver demo
+                  </button>
 									</header>
 								</article>
 								<article>
@@ -108,6 +120,9 @@ class Landing extends React.Component {
 									<header className="major">
 										<h3><a href="landing.html" className="link">Consequat</a></h3>
 										<p>Ipsum dolor sit amet</p>
+                    <button type="submit" className="button next scrolly">
+                    Ver demo
+                  </button>
 									</header>
 								</article>
 								<article>
@@ -117,6 +132,9 @@ class Landing extends React.Component {
 									<header className="major">
 										<h3><a href="landing.html" className="link">Etiam</a></h3>
 										<p>Feugiat amet tempus</p>
+                    <button type="submit" className="button next scrolly">
+                    Ver demo
+                  </button>
 									</header>
 								</article>
 							</section>
