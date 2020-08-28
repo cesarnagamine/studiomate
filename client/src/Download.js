@@ -39,9 +39,9 @@ export class Download extends Component {
                 <div className="inner">
                   <header className="major">
                     <h2>Gracias!</h2>
-                    <button>
-                    <a className='button scrolly' href='/MeijiShot.exe' download="">Descargar</a>
-                    </button>
+                   
+                    <button className='button scrolly' > <a href='/MeijiShot.exe' download="">Descargar </a></button>
+                   
                   </header>
                   <p>
                     Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
