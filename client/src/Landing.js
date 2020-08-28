@@ -18,7 +18,7 @@ class Landing extends React.Component {
 					<header id="header" className="alt">
 						<a className="logo"><strong>StudioMate Co.</strong> <span>by César Nagamine</span></a>
 						<nav>
-							<a className="logo">Menu</a>
+							{/* <a className="logo">Menu</a> */}
 						</nav>
 					</header>
            
@@ -188,9 +188,9 @@ class Landing extends React.Component {
 						</div>
             <div className="inner">
 							<ul className="icons">
-								<li><a href="#" className="icon brands alt fa-twitter"><span className="label">Twitter</span></a></li>
+					
 								<li><a href="#" className="icon brands alt fa-facebook-f"><span className="label">Facebook</span></a></li>
-								<li><a href="#" className="icon brands alt fa-instagram"><span className="label">Instagram</span></a></li>
+		
 								<li><a href="#" className="icon brands alt fa-github"><span className="label">GitHub</span></a></li>
 								<li><a href="#" className="icon brands alt fa-linkedin-in"><span className="label">LinkedIn</span></a></li>
 							</ul>

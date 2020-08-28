@@ -12,7 +12,7 @@ export class Download extends Component {
 
     render() {
         return (
-            <div id="main">
+            <div id="wrapper">
               
 
                 <br />

@@ -63,7 +63,7 @@ class MailForm extends React.Component {
     // JSX Form element (check for properties!):
     render() {
         return (
-            <div class="inner">
+            <div className="inner">
                 <div className="col-12">
 
                     <form method="post" action="send" onSubmit={this.handleSubmit}>
