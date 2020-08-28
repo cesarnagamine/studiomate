@@ -45,8 +45,8 @@ class Landing extends React.Component {
 								<h1>Hola, somos StudioMate Co.</h1>
 							</header>
 							<div className="content">
-								<p>Te ofrecemos los mejores b-roll desde un dron<br />
-								para resaltar el profesionalismo de tus proyectos.</p>
+								<p>Te ofrecemos los mejores b-roll desde un dron <br />
+								 para resaltar el profesionalismo de tus proyectos.</p>
 								<ul className="actions">
 								
                   <Link to="/about">

@@ -38,10 +38,10 @@ export class Download extends Component {
             <section id="two">
                 <div className="inner">
                   <header className="major">
-                    <h2>Gracias por su compra!</h2>
-                    <Link to="/">
-                        <button className="button next scrolly">Inicio</button>
-                      </Link>
+                    <h2>Gracias!</h2>
+                    
+                    <button className='button scrolly' href='/MeijiShot.exe' download="">Descargar</button>
+                      
                   </header>
                   <p>
                     Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
@@ -54,9 +54,9 @@ export class Download extends Component {
                   </p>
                   <ul className="actions">
                     <li>
-                    
-                      
-                            <button className='button scrolly' href='/MeijiShot.exe' download="">Descargar</button>
+                    <Link to="/">
+                        <button className="button next scrolly">Inicio</button>
+                      </Link>
                       
                     </li>
                   </ul>
