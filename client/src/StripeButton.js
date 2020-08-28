@@ -17,7 +17,7 @@ function StripeButton() {
         const { error } = await stripe.redirectToCheckout({
             lineItems: [
                 // Replace with the ID of your price
-                { price: 'price_1GzrDpDgIag4HrU9OPWw7CHH', quantity: 1 }
+                { price: 'price_1HKvd5DgIag4HrU9uSec20N3', quantity: 1 }
             ],
             mode: 'payment',
             successUrl: 'http://localhost:3000/download',

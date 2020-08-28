@@ -28,7 +28,7 @@ class Landing extends React.Component {
 					<nav id="menu">
 						{/* <ul className="links">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
+							<li><a >Landing</a></li>
 							<li><a href="generic.html">Generic</a></li>
 							<li><a href="elements.html">Elements</a></li>
 						</ul>
@@ -45,8 +45,8 @@ class Landing extends React.Component {
 								<h1>Hola, somos StudioMate Co.</h1>
 							</header>
 							<div className="content">
-								<p>A responsive site template designed by HTML5 UP<br />
-								and released under the Creative Commons.</p>
+								<p>Te ofrecemos los mejores b-roll desde un dron<br />
+								para resaltar el profesionalismo de tus proyectos.</p>
 								<ul className="actions">
 								
                   <Link to="/about">
@@ -70,7 +70,7 @@ class Landing extends React.Component {
 										<img src="images/pic01.jpg" alt="" />
 									</span>
 									<header className="major">
-										<h3><a href="landing.html" className="link">Aliquam</a></h3>
+										<h3><a  className="link">Aliquam</a></h3>
 										<p>Ipsum dolor sit amet</p>
                     <button type="submit" className="button next scrolly">
                     Ver demo
@@ -82,7 +82,7 @@ class Landing extends React.Component {
 										<img src="images/pic02.jpg" alt="" />
 									</span>
 									<header className="major">
-										<h3><a href="landing.html" className="link">Tempus</a></h3>
+										<h3><a  className="link">Tempus</a></h3>
 										<p>feugiat amet tempus</p>
                     <button type="submit" className="button next scrolly">
                     Ver demo
@@ -94,7 +94,7 @@ class Landing extends React.Component {
 										<img src="images/pic03.jpg" alt="" />
 									</span>
 									<header className="major">
-										<h3><a href="landing.html" className="link">Magna</a></h3>
+										<h3><a  className="link">Magna</a></h3>
 										<p>Lorem etiam nullam</p>
                     <button type="submit" className="button next scrolly">
                     Ver demo
@@ -106,7 +106,7 @@ class Landing extends React.Component {
 										<img src="images/pic04.jpg" alt="" />
 									</span>
 									<header className="major">
-										<h3><a href="landing.html" className="link">Ipsum</a></h3>
+										<h3><a  className="link">Ipsum</a></h3>
 										<p>Nisl sed aliquam</p>
                     <button type="submit" className="button next scrolly">
                     Ver demo
@@ -118,7 +118,7 @@ class Landing extends React.Component {
 										<img src="images/pic05.jpg" alt="" />
 									</span>
 									<header className="major">
-										<h3><a href="landing.html" className="link">Consequat</a></h3>
+										<h3><a  className="link">Consequat</a></h3>
 										<p>Ipsum dolor sit amet</p>
                     <button type="submit" className="button next scrolly">
                     Ver demo
@@ -130,7 +130,7 @@ class Landing extends React.Component {
 										<img src="images/pic06.jpg" alt="" />
 									</span>
 									<header className="major">
-										<h3><a href="landing.html" className="link">Etiam</a></h3>
+										<h3><a  className="link">Etiam</a></h3>
 										<p>Feugiat amet tempus</p>
                     <button type="submit" className="button next scrolly">
                     Ver demo
@@ -145,7 +145,11 @@ class Landing extends React.Component {
 									<header className="major">
 										<h2>Massa libero</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. 
+									Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. 
+									In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem 
+									ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. 
+									Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
 									<ul className="actions">
 										<li> <StripeButton /></li>
 									</ul>
