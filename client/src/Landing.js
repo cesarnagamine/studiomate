@@ -13,6 +13,7 @@ class Landing extends React.Component {
     return (
       
       <div id="wrapper">
+
 					<header id="header" className="alt">
 						<a className="logo"><strong>StudioMate Co.</strong> <span>by César Nagamine</span></a>
 						<nav>
@@ -66,10 +67,10 @@ class Landing extends React.Component {
 									</span>
 									<header className="major">
 										<h3><a  className="link">Aliquam</a></h3>
-										<p>Ipsum dolor sit amet</p>
+										
                     <button type="submit" className="button next scrolly">
-                    Ver demo
-                  </button>
+                    <a  href="https://youtu.be/LkWcj8juJv4"  target='blank'>Ver demo</a>
+                  </button><StripeButton />
 									</header>
 								</article>
 								<article>
@@ -78,10 +79,10 @@ class Landing extends React.Component {
 									</span>
 									<header className="major">
 										<h3><a  className="link">Tempus</a></h3>
-										<p>feugiat amet tempus</p>
+										
                     <button type="submit" className="button next scrolly">
-                    Ver demo
-                  </button>
+					<a  href="https://youtu.be/N0rntG60qbs"  target='blank'>Ver demo</a>
+                  </button><StripeButton />
 									</header>
 								</article>
 								<article>
@@ -90,10 +91,10 @@ class Landing extends React.Component {
 									</span>
 									<header className="major">
 										<h3><a  className="link">Magna</a></h3>
-										<p>Lorem etiam nullam</p>
+										
                     <button type="submit" className="button next scrolly">
-                    Ver demo
-                  </button>
+					<a  href='https://youtu.be/UmjygJTCRHc'  target='blank'>Ver demo</a>
+                  </button><StripeButton />
 									</header>
 								</article>
 								<article>
@@ -102,10 +103,10 @@ class Landing extends React.Component {
 									</span>
 									<header className="major">
 										<h3><a  className="link">Ipsum</a></h3>
-										<p>Nisl sed aliquam</p>
+									
                     <button type="submit" className="button next scrolly">
-                    Ver demo
-                  </button>
+					<a  href="https://youtu.be/xvZQQ7s-4E8"  target='blank'>Ver demo</a>
+                  </button><StripeButton />
 									</header>
 								</article>
 								<article>
@@ -114,10 +115,10 @@ class Landing extends React.Component {
 									</span>
 									<header className="major">
 										<h3><a  className="link">Consequat</a></h3>
-										<p>Ipsum dolor sit amet</p>
+									
                     <button type="submit" className="button next scrolly">
-                    Ver demo
-                  </button>
+					<a  href="https://youtu.be/e6MgmlpxXc0"  target='blank'>Ver demo</a>
+                  </button><StripeButton />
 									</header>
 								</article>
 								<article>
@@ -126,10 +127,10 @@ class Landing extends React.Component {
 									</span>
 									<header className="major">
 										<h3><a  className="link">Etiam</a></h3>
-										<p>Feugiat amet tempus</p>
+									
                     <button type="submit" className="button next scrolly">
-                    Ver demo
-                  </button>
+					<a  href="https://youtu.be/rE0zHqp7IW8"  target='blank'>Ver demo</a>
+                  </button><StripeButton />
 									</header>
 								</article>
 							</section>
@@ -146,7 +147,8 @@ class Landing extends React.Component {
 									ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. 
 									Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
 									<ul className="actions">
-										<li> <StripeButton /></li>
+										<li> </li>
+									
 									</ul>
 								</div>
 							</section>
