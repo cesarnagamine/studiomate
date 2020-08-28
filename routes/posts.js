@@ -32,8 +32,6 @@ router.post('/', async (req, res) => {
 
     const post = new Users({
         name: req.body.user.name,
-        email: req.body.user.email,
-        subject: req.body.user.subject,
         message: req.body.user.message
     });
 

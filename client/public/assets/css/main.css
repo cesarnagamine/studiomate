@@ -2802,7 +2802,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):after {
-				background-image: url('./images/pic01.jpg');
+				background-image: url('./images/pic03.jpg');
 				content: '';
 				display: block;
 				height: 100%;
@@ -2826,7 +2826,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 3):after {
-				background-image: url('./images/pic03.jpg');
+				background-image: url('./images/pic01.jpg');
 				content: '';
 				display: block;
 				height: 100%;

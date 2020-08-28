@@ -25,35 +25,35 @@ app.use('/posts', postRoute);
 
 //Post request to send emails authomatically using nodemailer
 //Triggerd from the 'Form' component handleSubmit() function:
-app.post('/api/form', (req, res) => {
-    console.log(req.body);
-    //Set transporter, in this case Google Gmail account created by you:
-    const transporter = nodemailer.createTransport(smtpTransport({
-        service: 'gmail',
-        auth: {
-            user: 'nagamine.soft.dev@gmail.com',
-            pass: 'codingpath2020'
-        }
-    }));
+// app.post('/api/form', (req, res) => {
+//     console.log(req.body);
+//     //Set transporter, in this case Google Gmail account created by you:
+//     const transporter = nodemailer.createTransport(smtpTransport({
+//         service: 'gmail',
+//         auth: {
+//             user: 'nagamine.soft.dev@gmail.com',
+//             pass: 'codingpath2020'
+//         }
+//     }));
 
-    //Get the data from the 'handleSubmit()' function from the Form component:
-    const mailOptions = {
-        from: req.body.user.name,
-        to: [req.body.user.email, 'nagamine.soft.dev@gmail.com'],
-        subject: req.body.user.subject,
-        text: req.body.user.message
-    };
+//     //Get the data from the 'handleSubmit()' function from the Form component:
+//     const mailOptions = {
+//         from: req.body.user.name,
+//         to: [req.body.user.email, 'nagamine.soft.dev@gmail.com'],
+//         subject: req.body.user.subject,
+//         text: req.body.user.message
+//     };
 
-    //Use transporter to send 'mailOptions' data, if there's an error
-    //print it in the console, otherwise print the 'mailOptions' data:
-    transporter.sendMail(mailOptions, function (err, info) {
-        if (err)
-            console.log(err)
-        else
-            console.log(info);
-    });
+//     //Use transporter to send 'mailOptions' data, if there's an error
+//     //print it in the console, otherwise print the 'mailOptions' data:
+//     transporter.sendMail(mailOptions, function (err, info) {
+//         if (err)
+//             console.log(err)
+//         else
+//             console.log(info);
+//     });
 
-});
+// });
 
 mongoose.connect(process.env.DB_CONNECTION, {
     useNewUrlParser: true,

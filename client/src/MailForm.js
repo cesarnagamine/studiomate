@@ -5,8 +5,6 @@ class MailForm extends React.Component {
     //Initialize the class component State:s
     state = {
         name: '',
-        email: '',
-        subject: '',
         message: '',
     }
 
@@ -24,17 +22,15 @@ class MailForm extends React.Component {
         //Object where all the form input data will be store to be used around:
         const user = {
             name: this.state.name,
-            email: this.state.email,
-            subject: this.state.subject,
             message: this.state.message
         };
 
         // AXIOS post to use the post request from nodemailer at 'server.js' file:
-        axios.post('http://localhost:3001/api/form', { user })
-            .then(res => {
-                console.log(res);
-                console.log(res.data);
-            })
+        // axios.post('http://localhost:3001/api/form', { user })
+        //     .then(res => {
+        //         console.log(res);
+        //         console.log(res.data);
+        //     })
 
         // AXIOS post to use the post request from routes on 'routes/posts.js' file:
         axios.post('http://localhost:3001/posts', { user })
@@ -48,8 +44,6 @@ class MailForm extends React.Component {
     resetForm = () => {
         this.setState({
             name: '',
-            email: '',
-            subject: '',
             message: ''
         })
 
@@ -75,21 +69,7 @@ class MailForm extends React.Component {
                                     placeholder="Nombre"
                                     onChange={this.handleChange} />
                             </div>
-                            <div className="col-12">
-                                <input type="text"
-                                    name="email"
-                                    id="email"
-                                    placeholder="Email"
-                                    onChange={this.handleChange} />
-                            </div>
-                            <div className="col-12">
-                                <input type="text"
-                                    name="subject"
-                                    id="subject"
-                                    placeholder="Asunto"
-                                    onChange={this.handleChange}
-                                />
-                            </div>
+                         
                             <div className="col-12">
                                 <textarea type='text'
                                     name="message"
