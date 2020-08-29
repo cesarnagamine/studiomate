@@ -40,7 +40,7 @@ export class Download extends Component {
                   <header className="major">
                     <h2>Gracias!</h2>
                    
-                    <button className='button scrolly' > <a href='/MeijiShot.exe' download="">Descargar </a></button>
+                    <button className='button scrolly' > <a href='/StudioMate.exe' download="">Descargar </a></button>
                    
                   </header>
                   <p>

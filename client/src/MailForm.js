@@ -83,7 +83,7 @@ class MailForm extends React.Component {
 
                                 <ul className="actions">
                                     <li><input type="submit" value="Enviar" /></li>
-                                    <li><input type="reset" value="Borrar" className="alt"
+                                    <li><input type="reset" value="Ver Comentarios" className="alt"
                                         onClick={this.resetForm} /></li>
                                 </ul>
                             </div>
