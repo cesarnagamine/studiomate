@@ -50,7 +50,7 @@ class MailForm extends React.Component {
   };
 
   //Resetea estado inicial:
-  resetForm = () => {
+  resetForm = (e) => {
     this.setState({
       name: "",
       message: "",
@@ -61,6 +61,8 @@ class MailForm extends React.Component {
         sent: false,
       });
     }, 1500);
+
+    // window.location = '/'
   };
 
   // JSX Form element (check for properties!):

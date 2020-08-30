@@ -1,27 +1,26 @@
 import React from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import axios from "axios";
-import StripeButton from "./StripeButton";
+import Gallery from "./Gallery";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MailForm from "./MailForm";
 import ReactStars from "react-rating-stars-component";
 
 const Exercise = props => (
-  <div>
-    <p>@{props.exercise.name}</p>
-    <p>{props.exercise.message}</p>
-    <ReactStars
+  <div className='inner'>
+    <h6>@{props.exercise.name}:</h6>  <ReactStars
                 type="number"
                 name="rate"
                 id="rate"
                 count={5}
                 value={props.exercise.rate}
-                edit={true}
-             
+                edit={false}
+
                 size={24}
                 activeColor="#ffd700"
               />
-              <br/>
+  <p>{props.exercise.message}</p>
+  <br/>
   </div>
 )
 
@@ -83,111 +82,7 @@ class Landing extends React.Component {
         </section>
 
         <div id="main">
-          <section id="one" className="tiles">
-            <article>
-              <span className="image">
-                <img src="images/pic01.jpg" alt="" />
-              </span>
-              <header className="major">
-                <h3>
-                  <a className="link">Forrest</a><p>Nice vertical shot.</p>
-                </h3>
-
-                
-                  <a href="https://youtu.be/LkWcj8juJv4" target="blank" type="submit" className="button next scrolly">
-                    Ver Demo
-                  </a>
-               
-                <StripeButton />
-              </header>
-            </article>
-            <article>
-              <span className="image">
-                <img src="images/pic02.jpg" alt="" />
-              </span>
-              <header className="major">
-                <h3>
-                  <a className="link">Highway</a><p>Rural side.</p>
-                </h3>
-
-            
-                  <a href="https://youtu.be/N0rntG60qbs" target="blank" type="submit" className="button next scrolly">
-                    Ver Demo
-                  </a>
-              
-                <StripeButton />
-              </header>
-            </article>
-            <article>
-              <span className="image">
-                <img src="images/pic03.jpg" alt="" />
-              </span>
-              <header className="major">
-                <h3>
-                  <a className="link">Lake</a><p>Beautiful sunset.</p>
-                </h3>
-
-               
-                  <a href="https://youtu.be/UmjygJTCRHc" target="blank" type="submit" className="button next scrolly">
-                    Ver Demo
-                  </a>
-               
-                <StripeButton />
-              </header>
-            </article>
-            <article>
-              <span className="image">
-                <img src="images/pic04.jpg" alt="" />
-              </span>
-              <header className="major">
-                <h3>
-                  <a className="link">Beach</a><p>Tropical paradise.</p>
-                </h3>
-
-                
-                  <a href="https://youtu.be/xvZQQ7s-4E8" target="blank" type="submit" className="button next scrolly">
-                    Ver Demo
-                  </a>
-               
-                <StripeButton />
-              </header>
-            </article>
-            <article>
-              <span className="image">
-                <img src="images/pic05.jpg" alt="" />
-              </span>
-              <header className="major">
-                <h3>
-                  <a className="link">Storm</a><p>From the air.</p>
-                </h3>
-
-                
-                  <a href="https://youtu.be/e6MgmlpxXc0" target="blank" type="submit" className="button next scrolly">
-                    Ver Demo
-                  </a>
-              
-                <StripeButton />
-              </header>
-            </article>
-            <article>
-              <span className="image">
-                <img src="images/pic06.jpg" alt="" />
-              </span>
-              <header className="major">
-                <h3>
-                  <a className="link">Snow</a><p>Winter path.</p>
-                </h3>
-
-               
-                  <a href="https://youtu.be/rE0zHqp7IW8" target="blank" type="submit" className="button next scrolly">
-                    Ver Demo
-                  </a>
-             
-                <StripeButton />
-              </header>
-            </article>
-          </section>
-
+          <Gallery />
           <section id="two">
             <div className="inner">
               <header className="major">
@@ -199,9 +94,13 @@ class Landing extends React.Component {
 				con el fin de ofrecerles mejores productos día a día.
               </p>
               <MailForm />
-          <section>
+
+          <div className='inner'>
+          <header className="major">
+                <h2>Feeds:</h2>
+              </header>
             { this.exerciseList() }
-          </section>
+          </div>
             </div>
           </section>
         </div>
@@ -214,26 +113,25 @@ class Landing extends React.Component {
                 <div className="contact-method">
                   <span className="icon solid alt fa-envelope"></span>
                   <h3>Email</h3>
-                  <a href="#">information@untitled.tld</a>
+                  <a href="#">cesarnagamine@gmail.com</a>
                 </div>
               </section>
               <section>
                 <div className="contact-method">
                   <span className="icon solid alt fa-phone"></span>
                   <h3>Phone</h3>
-                  <span>(000) 000-0000 x12387</span>
+                  <span>987-654-321</span>
                 </div>
               </section>
               <section>
                 <div className="contact-method">
                   <span className="icon solid alt fa-home"></span>
-                  <h3>Address</h3>
+                  <h3>Dirección</h3>
                   <span>
-                    1234 Somewhere Road #5432
+                    Algun Lugar 5432
                     <br />
-                    Nashville, TN 00000
-                    <br />
-                    United States of America
+                    Lima, Perú
+                    
                   </span>
                 </div>
               </section>
