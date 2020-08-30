@@ -8,7 +8,7 @@ import ReactStars from "react-rating-stars-component";
 
 const Exercise = props => (
   <div>
-    <p>{props.exercise.name}</p>
+    <p>@{props.exercise.name}</p>
     <p>{props.exercise.message}</p>
     <ReactStars
                 type="number"

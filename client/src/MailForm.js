@@ -76,7 +76,7 @@ class MailForm extends React.Component {
                   type="text"
                   name="name"
                   id="name"
-                  placeholder="Nombre"
+                  placeholder="@Nombre"
                   onChange={this.handleChange}
                 />
               </div>
