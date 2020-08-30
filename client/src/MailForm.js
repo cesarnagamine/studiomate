@@ -15,6 +15,7 @@ class MailForm extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  //Manage rating:
   ratingChanged = (newRate) => {
     this.setState({rate: newRate});
  };
@@ -43,14 +44,14 @@ class MailForm extends React.Component {
       console.log(res);
       console.log(res.data);
     });
-  };
 
+    window.location = '/'
+  };
 
   //Resetea estado inicial:
   resetForm = () => {
     this.setState({
       name: "",
-      rate: 0,
       message: "",
     });
 
@@ -63,7 +64,6 @@ class MailForm extends React.Component {
 
   // JSX Form element (check for properties!):
   render() {
-    
 
     return (
       <div className="inner">
@@ -84,6 +84,8 @@ class MailForm extends React.Component {
                 name="rate"
                 id="rate"
                 count={5}
+                value={5}
+                edit={true}
                 onChange={this.ratingChanged}
                 size={24}
                 activeColor="#ffd700"
