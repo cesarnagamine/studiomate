@@ -1,36 +1,65 @@
 import React from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-
+import axios from "axios";
 import StripeButton from "./StripeButton";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MailForm from "./MailForm";
+import ReactStars from "react-rating-stars-component";
+
+const Exercise = props => (
+  <div>
+    <p>{props.exercise.name}</p>
+    <p>{props.exercise.message}</p>
+    <ReactStars
+                type="number"
+                name="rate"
+                id="rate"
+                count={5}
+                value={props.exercise.rate}
+                edit={true}
+             
+                size={24}
+                activeColor="#ffd700"
+              />
+              <br/>
+  </div>
+)
+
 
 class Landing extends React.Component {
+    
+  state = {
+    comments: []
+  };
+  
+  
+  exerciseList() {
+    return this.state.comments.map(currentcomments => {
+      return <Exercise exercise={currentcomments}  key={currentcomments._id} />;
+    })
+  }
 
-
+  componentDidMount() {
+    axios.get('http://localhost:3001/posts/')
+      .then(response => {
+        this.setState({ comments: response.data })
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+  }
 
   render() {
+
+    
     return (
       <div id="wrapper">
         <header id="header" className="alt">
           <a className="logo">
             <strong>StudioMate Co.</strong> <span>by César Nagamine</span>
           </a>
-          <nav>{/* <a className="logo">Menu</a> */}</nav>
         </header>
 
-        <nav id="menu">
-          {/* <ul className="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a >Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul className="actions stacked">
-							<li><a href="#" className="button primary fit">Get Started</a></li>
-							<li><a href="#" className="button fit">Log In</a></li>
-						</ul> */}
-        </nav>
 
         <section id="banner" className="major">
           <div className="inner">
@@ -170,10 +199,9 @@ class Landing extends React.Component {
 				con el fin de ofrecerles mejores productos día a día.
               </p>
               <MailForm />
-              <p>{/* <ul className="actions">
-										<li> </li>
-									
-									</ul> */}</p>
+          <section>
+            { this.exerciseList() }
+          </section>
             </div>
           </section>
         </div>
