@@ -177,8 +177,8 @@ input, select, textarea {
 	}
 
 	p {
-		padding: 2em;
-		color: white;
+		padding: 0em;
+		color: rgb(255, 225, 89);
 		margin: 0 0 2em 0;
 	}
 

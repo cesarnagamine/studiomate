@@ -61,7 +61,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Forrest</a>
+                  <a className="link">Forrest</a><p>Nice vertical shot.</p>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -78,7 +78,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Highway</a>
+                  <a className="link">Highway</a><p>Rural side.</p>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -95,7 +95,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Lake</a>
+                  <a className="link">Lake</a><p>Beautiful sunset.</p>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -112,7 +112,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Beach</a>
+                  <a className="link">Beach</a><p>Tropical paradise.</p>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -129,7 +129,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Storm</a>
+                  <a className="link">Storm</a><p>From the air.</p>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -146,7 +146,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Snow</a>
+                  <a className="link">Snow</a><p>Winter path.</p>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
