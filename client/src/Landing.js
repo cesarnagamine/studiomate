@@ -61,7 +61,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Liquam</a>
+                  <a className="link">Forrest</a>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -78,7 +78,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Emptus</a>
+                  <a className="link">Highway</a>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -95,7 +95,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Gamma</a>
+                  <a className="link">Lake</a>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -112,7 +112,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Pisum</a>
+                  <a className="link">Beach</a>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -129,7 +129,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Onsequatum</a>
+                  <a className="link">Storm</a>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -146,7 +146,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Tiame</a>
+                  <a className="link">Snow</a>
                 </h3>
 
                 <button type="submit" className="button next scrolly">

@@ -43,9 +43,10 @@ class MailForm extends React.Component {
     axios.post("http://localhost:3001/posts", { user }).then((res) => {
       console.log(res);
       console.log(res.data);
+      window.location = '/'
     });
 
-    window.location = '/'
+   
   };
 
   //Resetea estado inicial:
@@ -84,7 +85,7 @@ class MailForm extends React.Component {
                 name="rate"
                 id="rate"
                 count={5}
-                value={5}
+                value={0}
                 edit={true}
                 onChange={this.ratingChanged}
                 size={24}
