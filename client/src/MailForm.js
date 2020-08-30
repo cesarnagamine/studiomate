@@ -1,99 +1,128 @@
-import React from 'react';
-import axios from 'axios';
+import React from "react";
+import axios from "axios";
+import ReactStars from "react-rating-stars-component";
 
 class MailForm extends React.Component {
-    //Initialize the class component State:s
-    state = {
-        name: '',
-        message: '',
-    }
+  //Initialize the class component State:s
+  state = {
+    name: "",
+    rate: "",
+    message: ""
+  };
+
+  //Manage all the form inputs:
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  ratingChanged = (newRate) => {
+    this.setState({rate: newRate});
+ };
+
+  //Handle the Submit:
+  handleSubmit = (event) => {
+    //Prevent the page from re-loading by defaut:
+    event.preventDefault();
+
+    //Object where all the form input data will be store to be used around:
+    const user = {
+      name: this.state.name,
+      rate: this.state.rate,
+      message: this.state.message,
+    };
+
+    // AXIOS post to use the post request from nodemailer at 'server.js' file:
+    // axios.post('http://localhost:3001/api/form', { user })
+    //     .then(res => {
+    //         console.log(res);
+    //         console.log(res.data);
+    //     })
+
+    // AXIOS post to use the post request from routes on 'routes/posts.js' file:
+    axios.post("http://localhost:3001/posts", { user }).then((res) => {
+      console.log(res);
+      console.log(res.data);
+    });
+  };
 
 
-    //Manage all the form inputs:
-    handleChange = (e) => {
-        this.setState({ [e.target.name]: e.target.value })
-    }
+  //Resetea estado inicial:
+  resetForm = () => {
+    this.setState({
+      name: "",
+      rate: 0,
+      message: "",
+    });
 
-    //Handle the Submit:
-    handleSubmit = event => {
-        //Prevent the page from re-loading by defaut:
-        event.preventDefault();
+    setTimeout(() => {
+      this.setState({
+        sent: false,
+      });
+    }, 1500);
+  };
 
-        //Object where all the form input data will be store to be used around:
-        const user = {
-            name: this.state.name,
-            message: this.state.message
-        };
+  // JSX Form element (check for properties!):
+  render() {
+    
 
-        // AXIOS post to use the post request from nodemailer at 'server.js' file:
-        // axios.post('http://localhost:3001/api/form', { user })
-        //     .then(res => {
-        //         console.log(res);
-        //         console.log(res.data);
-        //     })
-
-        // AXIOS post to use the post request from routes on 'routes/posts.js' file:
-        axios.post('http://localhost:3001/posts', { user })
-            .then(res => {
-                console.log(res);
-                console.log(res.data);
-            })
-    }
-
-    //Resetea estado inicial:
-    resetForm = () => {
-        this.setState({
-            name: '',
-            message: ''
-        })
-
-        setTimeout(() => {
-            this.setState({
-                sent: false,
-            })
-        }, 1500)
-    }
-
-    // JSX Form element (check for properties!):
-    render() {
-        return (
-            <div className="inner">
-                <div className="col-12">
-
-                    <form method="post" action="send" onSubmit={this.handleSubmit}>
-                        <div className="row">
-                            <div className="col-12">
-                                <input type="text"
-                                    name="name"
-                                    id="name"
-                                    placeholder="Nombre"
-                                    onChange={this.handleChange} />
-                            </div>
-                         
-                            <div className="col-12">
-                                <textarea type='text'
-                                    name="message"
-                                    id="message"
-                                    placeholder="Mensaje"
-                                    onChange={this.handleChange}>
-
-                                </textarea>
-                            </div>
-                            <div className="col-12">
-
-                                <ul className="actions">
-                                    <li><input type="submit" value="Enviar" /></li>
-                                    <li><input type="reset" value="Ver Comentarios" className="alt"
-                                        onClick={this.resetForm} /></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+    return (
+      <div className="inner">
+        <div className="col-12">
+          <form method="post" action="send" onSubmit={this.handleSubmit}>
+            <div className="row">
+              <div className="col-12">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nombre"
+                  onChange={this.handleChange}
+                />
+              </div>
+              <ReactStars
+                type="number"
+                name="rate"
+                id="rate"
+                count={5}
+                onChange={this.ratingChanged}
+                size={24}
+                activeColor="#ffd700"
+              />
+              <div className="col-12">
+                <textarea
+                  type="text"
+                  name="message"
+                  id="message"
+                  placeholder="Mensaje"
+                  onChange={this.handleChange}
+                ></textarea>
+              </div>
+              ,
+              <div className="col-12">
+                <ul className="actions">
+                  <li>
+                    <input
+                      type="submit"
+                      value="Enviar"
+                      className="alt scrolly"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      type="reset"
+                      value="Borrar"
+                      className="alt scrolly"
+                      onClick={this.resetForm}
+                    />
+                  </li>
+                </ul>
+              </div>
             </div>
-        );
-    }
-
+          </form>
+        </div>
+      </div>
+    );
+  }
 }
 
 //Export component to be used elsewhere:

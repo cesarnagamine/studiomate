@@ -32,12 +32,14 @@ router.post('/', async (req, res) => {
 
     const post = new Users({
         name: req.body.user.name,
+        rate: req.body.user.rate,
         message: req.body.user.message
     });
 
     try {
         const savedPost = await post.save();
         res.json(savedPost);
+        console.log(savedPost);
         console.log('Posted it!');
     } catch (err) {
         res.json({ message: err });

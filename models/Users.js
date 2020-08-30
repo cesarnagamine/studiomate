@@ -8,6 +8,10 @@ const userSchema = mongoose.Schema({
         type: String,
         require: true
     },
+    rate: {
+        type: Number,
+        require: true
+    },
     message: {
         type: String,
         require: true

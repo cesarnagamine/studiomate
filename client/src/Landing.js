@@ -61,7 +61,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Liquam</a><h6>Impresionante toma del bosque.</h6>
+                  <a className="link">Liquam</a>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -78,7 +78,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Emptus</a><h6>Toma aerea de una carretera.</h6>
+                  <a className="link">Emptus</a>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -95,7 +95,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Gamma</a><h6>Lago bajo el sunset.</h6>
+                  <a className="link">Gamma</a>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -112,7 +112,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Pisum</a><h6>Playa tropical.</h6>
+                  <a className="link">Pisum</a>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -129,7 +129,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Onsequatum</a><h6>Tormenta desde los aires.</h6>
+                  <a className="link">Onsequatum</a>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -146,7 +146,7 @@ class Landing extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Tiame</a><h6>Camino a través de la nieve.</h6>
+                  <a className="link">Tiame</a>
                 </h3>
 
                 <button type="submit" className="button next scrolly">
@@ -162,16 +162,12 @@ class Landing extends React.Component {
           <section id="two">
             <div className="inner">
               <header className="major">
-                <h2>Massa libero</h2>
+                <h2>Feedbacks</h2>
               </header>
               <p>
-                Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-                libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-                Pellentesque condimentum sem. In efficitur ligula tate urna.
-                Maecenas laoreet massa vel lacinia pellentesque lorem ipsum
-                dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-                sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
-                amet pharetra et feugiat tempus.
+                En StudioMate Co. valoramos todas y cada una de las recomendaciones de nuestros usuarios 
+				prestando atención a sus requerimientos y procesando la información de manera rápida 
+				con el fin de ofrecerles mejores productos día a día.
               </p>
               <MailForm />
               <p>{/* <ul className="actions">
