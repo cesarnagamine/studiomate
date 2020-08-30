@@ -39,7 +39,7 @@ class Landing extends React.Component {
             </header>
             <div className="content">
               <p>
-                Te ofrecemos los mejores b-roll desde un dron <br />
+                Te ofrecemos los mejores Drone B-rolls <br />
                 para resaltar el profesionalismo de tus proyectos.
               </p>
               <ul className="actions">
@@ -64,11 +64,11 @@ class Landing extends React.Component {
                   <a className="link">Forrest</a><p>Nice vertical shot.</p>
                 </h3>
 
-                <button type="submit" className="button next scrolly">
-                  <a href="https://youtu.be/LkWcj8juJv4" target="blank">
+                
+                  <a href="https://youtu.be/LkWcj8juJv4" target="blank" type="submit" className="button next scrolly">
                     Ver Demo
                   </a>
-                </button>
+               
                 <StripeButton />
               </header>
             </article>
@@ -81,11 +81,11 @@ class Landing extends React.Component {
                   <a className="link">Highway</a><p>Rural side.</p>
                 </h3>
 
-                <button type="submit" className="button next scrolly">
-                  <a href="https://youtu.be/N0rntG60qbs" target="blank">
+            
+                  <a href="https://youtu.be/N0rntG60qbs" target="blank" type="submit" className="button next scrolly">
                     Ver Demo
                   </a>
-                </button>
+              
                 <StripeButton />
               </header>
             </article>
@@ -98,11 +98,11 @@ class Landing extends React.Component {
                   <a className="link">Lake</a><p>Beautiful sunset.</p>
                 </h3>
 
-                <button type="submit" className="button next scrolly">
-                  <a href="https://youtu.be/UmjygJTCRHc" target="blank">
+               
+                  <a href="https://youtu.be/UmjygJTCRHc" target="blank" type="submit" className="button next scrolly">
                     Ver Demo
                   </a>
-                </button>
+               
                 <StripeButton />
               </header>
             </article>
@@ -115,11 +115,11 @@ class Landing extends React.Component {
                   <a className="link">Beach</a><p>Tropical paradise.</p>
                 </h3>
 
-                <button type="submit" className="button next scrolly">
-                  <a href="https://youtu.be/xvZQQ7s-4E8" target="blank">
+                
+                  <a href="https://youtu.be/xvZQQ7s-4E8" target="blank" type="submit" className="button next scrolly">
                     Ver Demo
                   </a>
-                </button>
+               
                 <StripeButton />
               </header>
             </article>
@@ -132,11 +132,11 @@ class Landing extends React.Component {
                   <a className="link">Storm</a><p>From the air.</p>
                 </h3>
 
-                <button type="submit" className="button next scrolly">
-                  <a href="https://youtu.be/e6MgmlpxXc0" target="blank">
+                
+                  <a href="https://youtu.be/e6MgmlpxXc0" target="blank" type="submit" className="button next scrolly">
                     Ver Demo
                   </a>
-                </button>
+              
                 <StripeButton />
               </header>
             </article>
@@ -149,11 +149,11 @@ class Landing extends React.Component {
                   <a className="link">Snow</a><p>Winter path.</p>
                 </h3>
 
-                <button type="submit" className="button next scrolly">
-                  <a href="https://youtu.be/rE0zHqp7IW8" target="blank">
+               
+                  <a href="https://youtu.be/rE0zHqp7IW8" target="blank" type="submit" className="button next scrolly">
                     Ver Demo
                   </a>
-                </button>
+             
                 <StripeButton />
               </header>
             </article>
