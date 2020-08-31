@@ -39,7 +39,7 @@ class Landing extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3001/posts/')
+    axios.get('https://studiomate.herokuapp.com/posts/')
       .then(response => {
         this.setState({ comments: response.data })
       })

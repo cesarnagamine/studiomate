@@ -40,7 +40,7 @@ class MailForm extends React.Component {
     //     })
 
     // AXIOS post to use the post request from routes on 'routes/posts.js' file:
-    axios.post("http://localhost:3001/posts", { user }).then((res) => {
+    axios.post("https://studiomate.herokuapp.com/posts", { user }).then((res) => {
       console.log(res);
       console.log(res.data);
       window.location = '/'

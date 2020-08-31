@@ -20,8 +20,8 @@ function StripeButton() {
                 { price: 'price_1HL0vRDgIag4HrU9VL64bgz3', quantity: 1 }
             ],
             mode: 'payment',
-            successUrl: 'http://localhost:3000/download',
-            cancelUrl: 'http://localhost:3000',
+            successUrl: 'https://studiomate.herokuapp.com/download',
+            cancelUrl: 'https://studiomate.herokuapp.com',
         });
         // If `redirectToCheckout` fails due to a browser or network
         // error, display the localized error message to your customer

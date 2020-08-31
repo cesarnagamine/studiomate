@@ -36,6 +36,13 @@ function About() {
                 <h2>Nosotros</h2>
               </header>
               <p>
+                Somos un equipo de más de 16 colaboradores alrededor del mundo. 
+                Llevando a cabo un gran trabajo filmográfico en escenarios únicos, 
+                vibrantes y maravillosos, aplicando lo mejor de la fotografía para lograr 
+                las tomas correctas en cada ocasión. Te invitamos a darle un vistazo a 
+                nuestro trabajo, te podemos asegurar que encontrarás material de sobra 
+                para llevar tus proyecto al siguiente nivel.
+              <br/>
                 Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
                 libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
                 Pellentesque condimentum sem. In efficitur ligula tate urna.
@@ -56,18 +63,7 @@ function About() {
 
         <div id="main">
           <section id="one" className="tiles">
-            <article>
-              <span className="image">
-                <img src="images/pic01.jpg" alt="" />
-              </span>
-              <header className="major"></header>
-            </article>
-            <article>
-              <span className="image">
-                <img src="images/pic02.jpg" alt="" />
-              </span>
-              <header className="major"></header>
-            </article>
+            
             <article>
               <span className="image">
                 <img src="images/pic03.jpg" alt="" />
