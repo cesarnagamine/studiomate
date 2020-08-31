@@ -102,7 +102,7 @@ class MailForm extends React.Component {
                   onChange={this.handleChange}
                 ></textarea>
               </div>
-              ,
+              
               <div className="col-12">
                 <ul className="actions">
                   <li>
