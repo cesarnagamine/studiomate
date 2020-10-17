@@ -17,7 +17,7 @@ class Gallery extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Forrest</a><p>Nice vertical shot.</p>
+                  <a className="link">Forrest</a>
                 </h3>
 
                 
@@ -34,7 +34,7 @@ class Gallery extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Highway</a><p>Rural side.</p>
+                  <a className="link">Highway</a>
                 </h3>
 
             
@@ -51,7 +51,7 @@ class Gallery extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Lake</a><p>Beautiful sunset.</p>
+                  <a className="link">Lake</a>
                 </h3>
 
                
@@ -68,7 +68,7 @@ class Gallery extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Beach</a><p>Tropical paradise.</p>
+                  <a className="link">Beach</a>
                 </h3>
 
                 
@@ -85,7 +85,7 @@ class Gallery extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Storm</a><p>From the air.</p>
+                  <a className="link">Storm</a>
                 </h3>
 
                 
@@ -102,7 +102,7 @@ class Gallery extends React.Component {
               </span>
               <header className="major">
                 <h3>
-                  <a className="link">Snow</a><p>Winter path.</p>
+                  <a className="link">Snow</a>
                 </h3>
 
                
